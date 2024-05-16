@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="container">
+        <h1>Welcome, <%= user.name %>!</h1>
+        <p>Role: <%= user.role %></p>
+
+        <div class="task-list">
+            <!-- Task list will be populated here -->
+        </div>
+
+        <% if (user.role === 'manager') { %>
+            <button id="addTaskBtn">Add Task</button>
+        <% } %>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

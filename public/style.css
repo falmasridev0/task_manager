@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #77b300 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.task-list {
+    margin: 20px 0;
+}
+
+#addTaskBtn {
+    display: block;
+    background: #77b300;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#addTaskBtn:hover {
+    background: #666;
+}
