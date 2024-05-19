@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="/images/favicon.png" type="">
 
-  <title> tasker | main page </title>
+  <title>Task Managers</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
@@ -46,9 +46,15 @@
         </a>
         <div class="navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/login"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-            </li>
+            <% if (user) { %>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/api/auth/logout">Logout</a>
+              </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/login">Login</a>
+              </li>
+            <% } %>
           </ul>
         </div>
       </nav>
