@@ -1,6 +1,7 @@
 <%- include('partials/header') %>
 <div class="container mt-5">
   <h1>Welcome, <%= user.name %> (Employee)</h1>
+  
   <h2>Tasks</h2>
   <table class="table table-striped">
     <thead>
@@ -26,6 +27,26 @@
             </form>
           <% } %>
         </td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <h2>Completed Tasks</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% completedTasks.forEach(task => { %>
+      <tr>
+        <td><%= task.title %></td>
+        <td><%= task.description %></td>
+        <td><%= task.priority %></td>
       </tr>
       <% }); %>
     </tbody>

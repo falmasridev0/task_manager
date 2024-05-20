@@ -929,3 +929,22 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+/* Add custom styles here */
+
+/* Ensure responsive design */
+.container {
+  max-width: 100%;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .header_section {
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+}
