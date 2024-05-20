@@ -20,11 +20,13 @@
         <td><%= task.assignedTo.name %></td>
         <td><%= task.priority %></td>
         <td>
-          <form action="/tasks/manager/edit/<%= task._id %>" method="POST" style="display:inline;">
-            <button type="submit" class="btn btn-warning">Edit</button>
-          </form>
+          <a href="/tasks/manager/edit/<%= task._id %>" class="btn btn-warning">Edit</a>
           <form action="/tasks/manager/priority/<%= task._id %>" method="POST" style="display:inline;">
-            <input type="text" name="priority" placeholder="Priority" required>
+            <select name="priority" required>
+              <option value="Low" <%= task.priority === 'Low' ? 'selected' : '' %>>Low</option>
+              <option value="Medium" <%= task.priority === 'Medium' ? 'selected' : '' %>>Medium</option>
+              <option value="High" <%= task.priority === 'High' ? 'selected' : '' %>>High</option>
+            </select>
             <button type="submit" class="btn btn-info">Set Priority</button>
           </form>
         </td>
@@ -52,7 +54,11 @@
     </div>
     <div class="form-group">
       <label for="priority">Priority</label>
-      <input type="text" class="form-control" id="priority" name="priority" required>
+      <select class="form-control" id="priority" name="priority" required>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
     </div>
     <button type="submit" class="btn btn-primary">Add Task</button>
   </form>

@@ -45,6 +45,17 @@ exports.addTask = async (req, res) => {
 };
 
 // Edit Task
+exports.getEditTaskPage = async (req, res) => {
+  try {
+    const task = await Task.findById(req.params.id).populate('assignedTo', 'name');
+    const employees = await User.find({ role: 'employee' });
+    res.render('editTask', { user: req.user, task, employees });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Server Error');
+  }
+};
+
 exports.editTask = async (req, res) => {
   try {
     const { title, description, assignedTo, priority } = req.body;
