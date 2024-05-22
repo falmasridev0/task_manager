@@ -11,7 +11,7 @@
   ## Team Members
   | Student Name  | Student ID |
   | ------------- | ------------- |
-  | Faisal Abdulaziz | 11111111  |
+  | Faisal Abdulaziz Almasri | 442015855  |
   | Faisal Waleed Al-Kindy  | 441014251  |
   | Morad Ibrahim Al-aziq  | 441017699  |
   
