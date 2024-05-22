@@ -104,3 +104,14 @@ exports.completeTask = async (req, res) => {
     res.status(500).send('Server Error');
   }
 };
+
+// Delete Task
+exports.deleteTask = async (req, res) => {
+  try {
+    await Task.findByIdAndDelete(req.params.id);
+    res.redirect('/tasks/manager');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Server Error');
+  }
+};

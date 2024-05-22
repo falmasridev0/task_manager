@@ -33,6 +33,9 @@
             </select>
             <button type="submit" class="btn btn-info">Set Priority</button>
           </form>
+          <form action="/tasks/manager/delete/<%= task._id %>" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this task?');">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
         </td>
       </tr>
       <% }); %>
