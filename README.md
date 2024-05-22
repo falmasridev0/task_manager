@@ -69,7 +69,7 @@ The platform provides different dashboards for managers and employees, ensuring 
 
 ### Screen shots
 1. Login Page:
-<img src="images/login.jpg" alt="login" width="1100" height="300">
+<img src="images/login.png" alt="login" width="1100" height="300">
 2. Manager Page:
 <img src="images/manager.jpg" alt="manager" width="1100" height="300">
 3. Employee Page:
