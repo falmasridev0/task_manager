@@ -29,7 +29,8 @@ The platform provides different dashboards for managers and employees, ensuring 
 ---
 
 ### Flow Chart
-![Flowchart](images/faisal-enter-the-path)
+<img src="images/flowchart.jpeg" alt="Flowchart" width="600" height="500">
+
 
 ---
 
@@ -67,9 +68,12 @@ The platform provides different dashboards for managers and employees, ensuring 
 ---
 
 ### Screen shots
-![Log in](images/the-path)
-![Manager Page](images/the-path)
-![Employees Page](images/the-path)
+1. Login Page:
+<img src="images/login.jpg" alt="login" width="1000" height="200">
+2. Manager Page:
+<img src="images/manager.jpg" alt="manager" width="1000" height="200">
+3. Employee Page:
+<img src="images/employee.jpg" alt="employee" width="1000" height="200">
 
 ---
 
